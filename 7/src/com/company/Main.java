@@ -92,12 +92,70 @@ public class Main {
 
 
 
+    }
+}
+
+                                                  //ПРИМЕРЫ ФУНКЦИЙ
+package com.company;
+//пример простой функции, выводим число 1000
+public class Main {
+    public static int f(){
+        return 1000;
+
+    }
+
+    public static void main(String[] args) {
+        // write your code here
+        int i=1000;
+        //System.out.println(i);
+        int x=f();
+        System.out.println(x);
+
+    }
+}
 
 
 
 
 
+package com.company;
+// написать функцию, которая будет принимать число, а потом выдавать это же число умноженное на само себя.
+public class Main {
+    public static int f (int a){
+        return a*a;
+    }
 
+
+    public static void main(String[] args) {
+        //write your code here
+        int a=10;
+        int x = f(10);
+        System.out.println(x);
+
+    }
+}
+
+
+
+package com.company;
+// Функция принимает число и строку и в результате выдает эту строку повторенную число раз
+public class Main {
+    public static String f(String a, int b){
+        String c="";
+        for (int i=0; i<b; i++){
+            c=c+a;
+        }
+        return c;
+
+
+    }
+
+
+    public static void main(String[] args) {
+        // write your code here
+        String a = "Class";
+        int b = 5;
+        System.out.println(f(a,b));
 
     }
 }
