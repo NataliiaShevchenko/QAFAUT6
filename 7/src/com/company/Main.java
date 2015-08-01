@@ -159,3 +159,55 @@ public class Main {
 
     }
 }
+
+
+// Функция принимает 2 массива длинной 5, в результате вьдает совпадают ли у них все значения (true/false).
+public class Main {
+    public static boolean compare5ElArrays(int[] arr1, int[] arr2) {
+        for (int i = 0; i < 5; i++) {
+            if (arr1[i] != arr2[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+    public static void main(String[] args) {
+        // write your code here
+        int []arr1 = {1,2,3,4,5};
+        int []arr2 = {1,2,6,4,5};
+        System.out.print(compare5ElArrays(arr1, arr2));
+
+
+    }
+}
+
+
+
+package com.company;
+// Функция принимает 2 массива любой длинньі, и вьідает в результате одинаковьіе ли все их значения.
+public class Main {
+    public static boolean compareArrays(int[] arr1, int[] arr2) {
+        if (arr1.length != arr2.length) {
+            return false;
+        }
+        for (int i = 0; i < arr1.length; i++){
+            if (arr1[i] != arr2[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+    public static void main(String[] args) {
+        // write your code here
+        int []arr1 = {1,2,3,4,5,6};
+        int []arr2 = {1,2,3,4,5,6};
+        System.out.print (compareArrays(arr1, arr2));
+
+
+    }
+}
+
